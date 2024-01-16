@@ -1,0 +1,17 @@
+@media(max-width: 1030px){
+    .nav-menu nav ul li a{
+        display: none;
+    }
+    #mobile-menu-btn{
+        display: inline-block;
+    }
+    
+}
+
+
+@media(max-width: 470px){
+    .nav-menu .social-icons i{
+        display: none;
+    }
+   
+}
