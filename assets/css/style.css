@@ -7,9 +7,15 @@ Version: 1.0.0
 
 /* CSS VARIABLES */
 :root{
-    --header-color: #0F101D;
+    --white-color: #fff;
+    --black-color: #000;
+    --upper-bg: #0F101D;
     --nav-menu-bg: #3A3C4B;
     --border-bottom:#3A3C4B;
+    --hero-heading: #F54B15;
+    --light-white: #ECECEC;
+    --gray: #B4B4B4;
+    --service-text: #0F101D;
 }
 
 body{
@@ -17,7 +23,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* margin-bottom: 500px; */
+    margin-bottom: 500px;
 }
 /* basic set up */
 
@@ -56,34 +62,113 @@ h1,h2,h3,h4,h5,h6{
 
 
 /* HEADER SECTION START */
-.header-section{
+.upper-section{
 
 }
-.header-row{
-    background-color: var(--header-color);
+.upper-row{
     display: flex;
     justify-content: space-between;
-    padding: 23px 60px 24px 60px;
+    background-color: var(--upper-bg);
+    padding: 23px 60px 25px 60px;
 }
-.h-right{
-    display: flex;
-    gap: 20px;
-}
-.header-nav{
+/* .nav-menu{
+    
     text-align: center;
+} */
+.nav-menu {
     background-color: var(--nav-menu-bg);
-   
+    padding: 20px;
+    border-bottom: 1px solid var(--upper-bg);
 }
-.header-nav nav ul li{ 
-    display: inline-block;
+.nav-menu nav ul{ 
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.nav-menu nav ul li{
     list-style: none;
 }
-.header-nav nav ul li a{
-    text-decoration: none; 
-    padding-bottom: 200px;
-    /* padding: 20px 80px; */
-}
-.header-nav nav ul li a+a{
-    margin-right: 20px;
+.nav-menu nav ul a{
+    text-decoration: none;
+    padding: 20px 62px;
+    align-items: center;
+    font-size: 18px;
+    color: var(--white-color);
 }
 /* HEADER SECTION END */
+
+
+
+/* HERO SECTION START */
+.hero-section{
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.hero-content{
+    background-color: var(--upper-bg);
+    padding: 50px 75px 0 75px;
+}
+.hero-content .hero-detail{
+    text-align: center;
+}
+.hero-content h6{
+    color: var(--hero-heading);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.hero-content h2{
+    color: var(--light-white);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.hero-content p{
+    color: var(--gray);
+    font-size: 18px;
+}
+.hero-content img{
+    width: 428px;
+    height: 270px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 21px 21px 0 0;
+    margin-top: 35px;
+    padding-bottom: 5px;
+}
+.shapes-2{
+    position: absolute;
+    top: 210px;
+}
+.shapes-3{
+    position: absolute;
+    top: 357px;
+    right: 262px;
+}
+/* .hero-shape{
+    position: absolute;
+    z-index: 999;
+    width: 300px;
+} */
+/* HERO SECTION END */
+
+
+/* SERVICE SECTION START */
+.service-section{
+
+}
+.service-top{
+    text-align: center;
+    background-color: var(--light-white);
+    padding: 80px 170px;
+}
+.service-text{
+    margin-bottom: 30px;
+}
+.service-text h3{
+    color: var(--service-text);
+    margin-bottom: 20px;
+    font-weight: 700px;
+}
+/* SERVICE SECTION END */
