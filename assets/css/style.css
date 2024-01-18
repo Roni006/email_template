@@ -7,7 +7,7 @@ Version: 1.0.0
 
 /* CSS VARIABLES */
 :root{
-    --white-color: #fff;
+    --white-color: #FFF;
     --black-color: #000;
     --upper-bg: #0F101D;
     --nav-menu-bg: #3A3C4B;
@@ -141,10 +141,12 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     top: 210px;
 }
-.shapes-3{
+.shapes-3 {
     position: absolute;
-    top: 357px;
-    right: 262px;
+    top: 370px;
+    /* right: 0; */
+    margin-left: 717px;
+    transform: rotate(180deg);
 }
 /* .hero-shape{
     position: absolute;
@@ -171,4 +173,45 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 20px;
     font-weight: 700px;
 }
+.service-row{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.service-content .s-icon{
+    background-color: var(--hero-heading);
+    height: 66px;
+    width: 66px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
 /* SERVICE SECTION END */
+
+
+/* ABOUT SECTION START */
+.about-section{
+    background-color: var(--upper-bg);
+}
+.about-row{
+    display: flex;
+    gap: 40px;
+    padding: 90px 60px 90px 60px;
+}
+.about-left img{
+    width: 285px;
+    height: 316px;
+    border-radius: 15px;
+}
+.about-right h3{
+    color: var(--light-white);
+    margin-bottom: 15px;
+}
+.about-right p{
+    color: var(--gray);
+    line-height: 25px;
+}
+/* ABOUT SECTION END */
